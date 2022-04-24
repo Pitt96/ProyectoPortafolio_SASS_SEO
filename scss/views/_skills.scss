@@ -1,0 +1,75 @@
+body{
+    .main_skills{
+        width: 100%;
+        .skills{
+            width:100%;
+            height:auto;
+            text-align: center;
+            margin-top:20px;
+            margin-bottom:30px;
+            display: block;
+            align-items: center;
+            .skills_descripcion{
+                .titulo_skills{
+                    font-family: $tipo-letra-titulos;
+                    color: $color-blanco;
+                    font-size:25px;
+                    margin-bottom:12px;
+                }
+                .des{
+                    color: #A4819D;
+                    margin-bottom: 10px;
+                    padding:25px;
+                }
+            }
+            .descargar_cv{
+                display: inline-block;
+                margin: 10px;
+                padding: 10px;
+                border-radius:20px;
+                background-color: #E91A48;
+                .enlace{
+                    text-decoration: none;
+                    color: $color-blanco;
+                }
+                &:hover{
+                    background-color:$color-negro;
+                    border:1px solid #E91A48;
+                }
+            }
+        }
+        .contenedor_card_skills{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .skills_card{
+                // border:1px solid red;
+                background-color: #1A1A1A;
+                width: 280px;
+                border-radius: 30px;
+                text-align: center;
+                margin: 10px;
+                img{
+                    padding: 10px;
+                    border-radius: 30px;
+                    width: 250px;
+                    height: 300px;
+                    margin-bottom: 10px;
+                }
+                .s_card_des{
+                    margin-top: 60px;
+                    margin-bottom:15px;
+                    p{
+                        color: $color-blanco;
+                        font-size:30px;
+                        font-family: $tipo-letra-contenido;
+                        .s_span{
+                            color: #E91A48;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

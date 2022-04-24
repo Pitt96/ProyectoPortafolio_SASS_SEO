@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+body .container_pag header {
+  width: 100%; }
+  body .container_pag header nav {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    color: #ffff;
+    position: fixed;
+    border-bottom: 1px solid #293241;
+    z-index: 10; }
+    body .container_pag header nav .nav-container {
+      display: flex;
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center; }
+      body .container_pag header nav .nav-container .nav__logo {
+        font-size: 45px;
+        font-weight: 900;
+        font-family: "Sacramento", cursive; }
+        body .container_pag header nav .nav-container .nav__logo span {
+          color: #FF1C52; }
+      body .container_pag header nav .nav-container .nav__label {
+        display: block;
+        cursor: pointer; }
+        body .container_pag header nav .nav-container .nav__label .fa-solid {
+          font-size: 35px;
+          color: #ffff; }
+      body .container_pag header nav .nav-container .nav__input {
+        display: none; }
+        body .container_pag header nav .nav-container .nav__input:checked + .nav__menu {
+          clip-path: circle(100% at center); }
+      body .container_pag header nav .nav-container .nav__menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: black;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        opacity: 0.9;
+        z-index: 5; }
+        body .container_pag header nav .nav-container .nav__menu ul {
+          text-align: center; }
+          body .container_pag header nav .nav-container .nav__menu ul li {
+            font-family: "Special Elite", cursive;
+            margin-bottom: 70px;
+            list-style: none; }
+            body .container_pag header nav .nav-container .nav__menu ul li .nav__item {
+              text-decoration: none;
+              color: #ffff;
+              font-size: 32px;
+              --clippy:polygon(0 0,0 0,0 100%,0% 100%); }
+              body .container_pag header nav .nav-container .nav__menu ul li .nav__item::after {
+                content: "";
+                display: block;
+                background-color: #FF1C52;
+                width: 90%;
+                margin-top: 3px;
+                height: 3px;
+                clip-path: var(--clippy);
+                transition: cli-path .5s; }
+              body .container_pag header nav .nav-container .nav__menu ul li .nav__item:hover {
+                --clippy:polygon(0 0,100% 0,100% 100%,0% 100%); }
+
+body main {
+  padding-top: 80px; }
+  body main .banner {
+    width: 100%;
+    height: 380px;
+    background-image: url(/Imagenes/fondo_2.svg);
+    background-size: 100% 450px; }
+    body main .banner .des_banner {
+      color: #ffff;
+      padding: 10px 0 0 10px; }
+      body main .banner .des_banner p:nth-child(1) {
+        font-family: "Special Elite", cursive;
+        color: #A4819D;
+        font-size: 18px; }
+      body main .banner .des_banner p:nth-child(2) {
+        padding-left: 3px;
+        font-size: 35px;
+        font-family: "Special Elite", cursive; }
+        body main .banner .des_banner p:nth-child(2) span {
+          color: #FF1C52; }
+      body main .banner .des_banner p:nth-child(3) {
+        font-family: "Special Elite", cursive;
+        font-size: 20px; }
+  body main .sobre_mi .img {
+    display: none; }
+  body main .sobre_mi .des_mi {
+    width: 100%; }
+    body main .sobre_mi .des_mi h2 {
+      font-size: 25px;
+      color: #ffff;
+      font-family: "Kaushan Script", cursive;
+      text-align: center;
+      margin-bottom: 5px; }
+    body main .sobre_mi .des_mi h3 {
+      font-size: 18px;
+      color: #ffff;
+      font-family: "Kaushan Script", cursive;
+      text-align: center;
+      margin-bottom: 5px; }
+      body main .sobre_mi .des_mi h3 span {
+        color: #FF1C52; }
+    body main .sobre_mi .des_mi p {
+      text-align: center;
+      padding: 25px;
+      color: #A4819D; }
+  body main .some_proyectos {
+    padding-top: 5px;
+    display: block;
+    width: 100%;
+    text-align: center; }
+    body main .some_proyectos .titulo_proyectos {
+      padding-bottom: 20px; }
+      body main .some_proyectos .titulo_proyectos h2 {
+        font-family: "Kaushan Script", cursive;
+        font-size: 25px;
+        color: #ffff; }
+    body main .some_proyectos .group_card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 30px; }
+      body main .some_proyectos .group_card .card {
+        border-radius: 30px;
+        width: 250px;
+        margin: 10px;
+        background-color: #1A1A1A; }
+        body main .some_proyectos .group_card .card img {
+          width: 250px;
+          border-radius: 30px;
+          margin-bottom: 15px; }
+        body main .some_proyectos .group_card .card .des_card {
+          margin-bottom: 10px;
+          color: #A4819D;
+          font-family: "Special Elite", cursive; }
+        body main .some_proyectos .group_card .card .ver {
+          text-decoration: none;
+          display: inline-block;
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          background-color: #E91A48; }
+          body main .some_proyectos .group_card .card .ver:hover {
+            border: 2px solid #E91A48;
+            background-color: black; }
+          body main .some_proyectos .group_card .card .ver a {
+            text-decoration: none;
+            color: #ffff; }
+
+body .main_skills {
+  width: 100%; }
+  body .main_skills .skills {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+    align-items: center; }
+    body .main_skills .skills .skills_descripcion .titulo_skills {
+      font-family: "Kaushan Script", cursive;
+      color: #ffff;
+      font-size: 25px;
+      margin-bottom: 12px; }
+    body .main_skills .skills .skills_descripcion .des {
+      color: #A4819D;
+      margin-bottom: 10px;
+      padding: 25px; }
+    body .main_skills .skills .descargar_cv {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #E91A48; }
+      body .main_skills .skills .descargar_cv .enlace {
+        text-decoration: none;
+        color: #ffff; }
+      body .main_skills .skills .descargar_cv:hover {
+        background-color: black;
+        border: 1px solid #E91A48; }
+  body .main_skills .contenedor_card_skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .main_skills .contenedor_card_skills .skills_card {
+      background-color: #1A1A1A;
+      width: 280px;
+      border-radius: 30px;
+      text-align: center;
+      margin: 10px; }
+      body .main_skills .contenedor_card_skills .skills_card img {
+        padding: 10px;
+        border-radius: 30px;
+        width: 250px;
+        height: 300px;
+        margin-bottom: 10px; }
+      body .main_skills .contenedor_card_skills .skills_card .s_card_des {
+        margin-top: 60px;
+        margin-bottom: 15px; }
+        body .main_skills .contenedor_card_skills .skills_card .s_card_des p {
+          color: #ffff;
+          font-size: 30px;
+          font-family: "Special Elite", cursive; }
+          body .main_skills .contenedor_card_skills .skills_card .s_card_des p .s_span {
+            color: #E91A48; }
+
+body .container_pag .main_portafolio {
+  padding-top: 80px;
+  width: 100%; }
+  body .container_pag .main_portafolio .con_portafolio {
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center; }
+    body .container_pag .main_portafolio .con_portafolio .p_titulo {
+      padding-bottom: 20px; }
+      body .container_pag .main_portafolio .con_portafolio .p_titulo h2 {
+        font-family: "Kaushan Script", cursive;
+        font-size: 38px;
+        color: #ffff; }
+    body .container_pag .main_portafolio .con_portafolio .portafolio_card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 30px; }
+      body .container_pag .main_portafolio .con_portafolio .portafolio_card .card {
+        border-radius: 30px;
+        width: 250px;
+        margin: 10px;
+        background-color: #1A1A1A; }
+        body .container_pag .main_portafolio .con_portafolio .portafolio_card .card img {
+          width: 250px;
+          border-radius: 30px;
+          margin-bottom: 15px; }
+        body .container_pag .main_portafolio .con_portafolio .portafolio_card .card .des_card {
+          margin-bottom: 10px;
+          color: #A4819D;
+          font-family: "Special Elite", cursive; }
+        body .container_pag .main_portafolio .con_portafolio .portafolio_card .card .ver {
+          text-decoration: none;
+          display: inline-block;
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          background-color: #E91A48; }
+          body .container_pag .main_portafolio .con_portafolio .portafolio_card .card .ver:hover {
+            border: 2px solid #E91A48;
+            background-color: black; }
+          body .container_pag .main_portafolio .con_portafolio .portafolio_card .card .ver a {
+            text-decoration: none;
+            color: #ffff; }
+
+body .main_servicios .con_servicios {
+  padding-top: 5px;
+  display: block;
+  width: 100%;
+  text-align: center; }
+  body .main_servicios .con_servicios .ser_titulo h2 {
+    color: #ffff;
+    font-family: "Kaushan Script", cursive;
+    font-size: 30px; }
+  body .main_servicios .con_servicios .con_servicios_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px; }
+    body .main_servicios .con_servicios .con_servicios_card .s_card {
+      width: 280px;
+      background-color: #1A1A1A;
+      margin: 10px;
+      border-radius: 30px; }
+      body .main_servicios .con_servicios .con_servicios_card .s_card img {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%; }
+      body .main_servicios .con_servicios .con_servicios_card .s_card .ser_h3 {
+        font-family: "Kaushan Script", cursive;
+        font-size: 25px;
+        color: #ffff; }
+      body .main_servicios .con_servicios .con_servicios_card .s_card .des_card_port {
+        color: #A4819D; }
+      body .main_servicios .con_servicios .con_servicios_card .s_card .ver {
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #E91A48; }
+        body .main_servicios .con_servicios .con_servicios_card .s_card .ver:hover {
+          border: 2px solid #E91A48;
+          background-color: black; }
+        body .main_servicios .con_servicios .con_servicios_card .s_card .ver a {
+          text-decoration: none;
+          color: #ffff; }
+
+body .main_contacto {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  body .main_contacto .formulario {
+    width: 250px;
+    display: block;
+    background-color: #1A1A1A;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10%; }
+    body .main_contacto .formulario h2 {
+      font-family: "Kaushan Script", cursive;
+      font-size: 25px;
+      color: #ffff;
+      text-align: center;
+      padding-bottom: 10px; }
+    body .main_contacto .formulario form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 30px; }
+      body .main_contacto .formulario form .field {
+        margin: 10px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center; }
+      body .main_contacto .formulario form .field_des {
+        border-radius: 10%;
+        text-align: center;
+        margin-bottom: 30px; }
+      body .main_contacto .formulario form .btn {
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid #E91A48;
+        color: #E91A48;
+        font-weight: bold; }
+        body .main_contacto .formulario form .btn:hover {
+          background-color: #E91A48;
+          color: #ffff; }
+
+footer {
+  width: 100%;
+  background-color: #1A1A1A;
+  color: #ffff;
+  display: grid;
+  text-align: center;
+  grid-template-areas: "titulo_footer titulo_footer titulo_footer" "footer_des    footer_des    footer_des" "fa-github      fa-instagram  fa-linkedin" "fa-whatsapp    fa-telegram    fa-facebook-f";
+  justify-content: center;
+  padding-bottom: 10px; }
+  footer .titulo_footer {
+    font-family: "Kaushan Script", cursive;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    grid-area: titulo_footer; }
+  footer .footer_des {
+    font-family: "Special Elite", cursive;
+    color: #A4819D;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    grid-area: footer_des; }
+  footer .fa-brands {
+    color: #ffff;
+    font-size: 25px;
+    margin: 5px; }
+  footer .iz_1 {
+    grid-area: fa-github;
+    justify-self: end; }
+  footer .cen_1 {
+    grid-area: fa-instagram;
+    justify-self: center; }
+  footer .der_1 {
+    grid-area: fa-linkedin;
+    justify-self: start; }
+  footer .iz_2 {
+    grid-area: fa-whatsapp;
+    justify-self: end; }
+  footer .cen_2 {
+    grid-area: fa-telegram;
+    justify-self: center; }
+  footer .der_2 {
+    grid-area: fa-facebook-f;
+    justify-self: start; }
+
+@media all and (min-width: 321px) {
+  /*---------------INDEX---------------*/
+  body main .sobre_mi .des_mi p {
+    padding: 20px; }
+  body main .some_proyectos .group_card .card {
+    width: 300px; }
+    body main .some_proyectos .group_card .card img {
+      width: 300px; } }
+
+@media all and (min-width: 1024px) {
+  /*---------------Navegacion---------------*/
+  body .container header .nav .nav-container {
+    display: grid;
+    grid-template-columns: 30% 70%; }
+    body .container header .nav .nav-container .nav__logo {
+      margin-left: 80px; }
+    body .container header .nav .nav-container .nav__label {
+      display: none; }
+    body .container header .nav .nav-container .nav__menu {
+      margin-left: 45px;
+      position: static;
+      background: none;
+      height: auto;
+      clip-path: none;
+      opacity: none; }
+      body .container header .nav .nav-container .nav__menu ul {
+        color: #ffff;
+        display: grid;
+        grid-auto-flow: column;
+        font-size: 10px; }
+        body .container header .nav .nav-container .nav__menu ul li {
+          margin-bottom: 0;
+          margin-left: 30px; }
+          body .container header .nav .nav-container .nav__menu ul li .nav__item {
+            font-size: 20px; } }

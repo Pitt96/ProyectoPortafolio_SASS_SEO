@@ -1,0 +1,63 @@
+body{
+    .container_pag{
+        .main_portafolio{
+            padding-top:80px;
+            width: 100%;
+            .con_portafolio{
+                padding-top: 10px;
+                display:block;
+                width: 100%;
+                text-align: center;
+                .p_titulo{
+                    padding-bottom: 20px;
+                    h2{
+                        font-family: $tipo-letra-titulos;
+                        font-size:38px;
+                        color:$color-blanco;
+                    }
+                }
+                .portafolio_card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    padding-bottom:30px;
+                    .card{
+                    
+                        border-radius: 30px;
+                        width:250px;
+                        margin:10px;
+                        background-color: #1A1A1A;
+                        img{
+                            width: 250px;
+                            border-radius: 30px;
+                            margin-bottom: 15px;
+                        }
+                        .des_card{
+                            margin-bottom:10px;
+                            color: #A4819D;
+                            font-family: $tipo-letra-contenido;
+                        }
+                        .ver{
+                            text-decoration: none;
+                            display: inline-block;
+                            margin: 10px;
+                            padding: 10px;
+                            border-radius:20px;
+                            background-color: #E91A48;
+                            &:hover{
+                                border: 2px solid #E91A48;
+                                background-color:black;
+                            }
+                            a{
+                                text-decoration: none;
+                                color:$color-blanco;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

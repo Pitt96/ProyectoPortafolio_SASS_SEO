@@ -1,0 +1,58 @@
+footer{
+    width:100%;
+    background-color: #1A1A1A;
+    color: $color-blanco;
+    display: grid;
+    text-align: center;
+    grid-template-areas: "titulo_footer titulo_footer titulo_footer"
+                          "footer_des    footer_des    footer_des"
+                          "fa-github      fa-instagram  fa-linkedin"
+                          "fa-whatsapp    fa-telegram    fa-facebook-f";
+    justify-content: center;
+    padding-bottom: 10px;
+    .titulo_footer{
+        font-family: $tipo-letra-titulos;
+        font-size:25px;
+        margin-top:20px;
+        margin-bottom:5px;
+        grid-area: titulo_footer;
+    }
+    .footer_des{
+        font-family: $tipo-letra-contenido;
+        color: #A4819D;
+        padding: 10px;
+        margin-bottom:10px;
+        font-size:15px;
+        grid-area: footer_des;
+    }
+    .fa-brands{
+        color:$color-blanco;
+        font-size:25px;
+        margin: 5px;
+    }
+    .iz_1{
+        grid-area: fa-github;
+        justify-self: end;
+    }
+    
+    .cen_1{
+        grid-area: fa-instagram;
+        justify-self: center;
+    }
+    .der_1{
+        grid-area: fa-linkedin;
+        justify-self: start;
+    }
+    .iz_2{
+        grid-area: fa-whatsapp;
+        justify-self: end;
+    }
+    .cen_2{
+        grid-area: fa-telegram;
+        justify-self: center;
+    }
+    .der_2{
+        grid-area: fa-facebook-f;
+        justify-self: start;
+    }
+}

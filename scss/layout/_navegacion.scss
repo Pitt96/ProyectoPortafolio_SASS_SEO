@@ -1,0 +1,90 @@
+body{
+    .container_pag{
+        header{
+            width: 100%;
+            nav{
+                background-color:black;
+                width: 100%;
+                height:80px;
+                color: $color-blanco;
+                position:fixed;
+                border-bottom: 1px solid #293241;
+                z-index: 10; 
+                .nav-container{
+                    display: flex;
+                    height:100%;
+                    width: 90%;
+                    margin: 0 auto;
+                    justify-content: space-between;
+                    align-items: center;
+                    .nav__logo{
+                        font-size:45px;
+                        font-weight: 900;
+                        font-family: $tipo-letra-logo;
+                        span{
+                            color:#FF1C52;
+                        }
+                    }
+                    .nav__label{
+                        display: block;
+                        cursor: pointer;
+                        .fa-solid{
+                            font-size:35px;
+                            color:$color-blanco;
+                        }
+                    }
+                    .nav__input{
+                        display:none;
+                        &:checked+.nav__menu{
+                            clip-path: circle(100% at center);
+                        }
+                    }
+                    .nav__menu{
+                        position: fixed;
+                        top: 80px;
+                        bottom:0;
+                        background:$color-negro;
+                        width:100%;
+                        left: 0;
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        align-items: center;
+                        clip-path: circle(0 at center);
+                        transition: clip-path 1s ease-in-out;
+                        opacity: 0.9;
+                        z-index: 5;
+                        ul{
+                            text-align: center;
+                            li{
+                                font-family: $tipo-letra-contenido;
+                                margin-bottom:70px;
+                                list-style: none;
+                                .nav__item{
+                                    text-decoration: none;
+                                    color: $color-blanco;
+                                    font-size:32px;
+                                    --clippy:polygon(0 0,0 0,0 100%,0% 100%);
+                                    &::after{
+                                        content: "";
+                                        display: block;
+                                        background-color:#FF1C52;
+                                        width: 90%;
+                                        margin-top: 3px;
+                                        height:3px;
+                                        clip-path: var(--clippy);
+                                        transition:cli-path .5s;
+                                    }
+                                    &:hover{
+                                        --clippy:polygon(0 0,100% 0,100% 100%,0% 100%);
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
