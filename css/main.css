@@ -18,7 +18,7 @@ body .container_pag header {
     color: #ffff;
     position: fixed;
     border-bottom: 1px solid #293241;
-    z-index: 10; }
+    z-index: 999; }
     body .container_pag header nav .nav-container {
       display: flex;
       height: 100%;
@@ -106,19 +106,19 @@ body main {
       height: 250px; }
       body main .banner .img_banner img {
         width: 100%;
-        height: 300px; }
+        height: 250px; }
   body main .sobre_mi .img {
     display: none; }
   body main .sobre_mi .des_mi {
     width: 100%; }
     body main .sobre_mi .des_mi h2 {
-      font-size: 25px;
+      font-size: 30px;
       color: #ffff;
       font-family: "Kaushan Script", cursive;
       text-align: center;
       margin-bottom: 5px; }
     body main .sobre_mi .des_mi h3 {
-      font-size: 18px;
+      font-size: 20px;
       color: #ffff;
       font-family: "Kaushan Script", cursive;
       text-align: center;
@@ -130,7 +130,7 @@ body main {
       padding: 25px;
       color: #A4819D; }
   body main .some_proyectos {
-    padding-top: 5px;
+    margin-top: 5px;
     display: block;
     width: 100%;
     text-align: center; }
@@ -186,7 +186,7 @@ body .main_skills {
     body .main_skills .skills .skills_descripcion .titulo_skills {
       font-family: "Kaushan Script", cursive;
       color: #ffff;
-      font-size: 25px;
+      font-size: 38px;
       margin-bottom: 12px; }
     body .main_skills .skills .skills_descripcion .des {
       color: #A4819D;
@@ -286,7 +286,7 @@ body .main_servicios .con_servicios {
   body .main_servicios .con_servicios .ser_titulo h2 {
     color: #ffff;
     font-family: "Kaushan Script", cursive;
-    font-size: 30px; }
+    font-size: 38px; }
   body .main_servicios .con_servicios .con_servicios_card {
     display: flex;
     flex-direction: column;
@@ -331,7 +331,7 @@ body .main_contacto {
   align-items: center;
   width: 100%; }
   body .main_contacto .formulario {
-    width: 250px;
+    width: 310px;
     display: block;
     background-color: #1A1A1A;
     padding-top: 10px;
@@ -340,7 +340,7 @@ body .main_contacto {
     border-radius: 10%; }
     body .main_contacto .formulario h2 {
       font-family: "Kaushan Script", cursive;
-      font-size: 25px;
+      font-size: 38px;
       color: #ffff;
       text-align: center;
       padding-bottom: 10px; }
@@ -358,7 +358,8 @@ body .main_contacto {
       body .main_contacto .formulario form .field_des {
         border-radius: 10%;
         text-align: center;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        padding: 5px; }
       body .main_contacto .formulario form .btn {
         width: 200px;
         border-radius: 10px;
@@ -377,6 +378,7 @@ footer {
   text-align: center;
   grid-template-areas: "titulo_footer titulo_footer titulo_footer" "footer_des    footer_des    footer_des" "fa-github      fa-instagram  fa-linkedin" "fa-whatsapp    fa-telegram    fa-facebook-f";
   justify-content: center;
+  grid-template-columns: 2fr 1fr 2fr;
   padding-bottom: 10px; }
   footer .titulo_footer {
     font-family: "Kaushan Script", cursive;
@@ -416,36 +418,304 @@ footer {
 
 @media all and (min-width: 321px) {
   /*---------------INDEX---------------*/
-  body main .sobre_mi .des_mi p {
-    padding: 20px; }
-  body main .some_proyectos .group_card .card {
+  body .container_pag main .banner .des_banner {
+    padding-bottom: 45px; }
+  body .container_pag main .banner .img_banner {
+    height: 250px;
+    display: flex;
+    align-items: flex-end; }
+    body .container_pag main .banner .img_banner img {
+      height: 350px; }
+  body .container_pag main .sobre_mi .des_mi p {
+    padding: 30px; }
+  body .container_pag main .some_proyectos .group_card .card {
     width: 300px; }
-    body main .some_proyectos .group_card .card img {
+    body .container_pag main .some_proyectos .group_card .card img {
+      width: 300px; }
+  /*---------------PORTAFOLIO---------------*/
+  body .container_pag .main_portafolio .con_portafolio .portafolio_card .card {
+    width: 300px; }
+    body .container_pag .main_portafolio .con_portafolio .portafolio_card .card img {
       width: 300px; } }
+
+@media all and (min-width: 480px) {
+  /*---------------Navegacion---------------*/
+  body div header .nav .nav-container .nav__logo {
+    font-size: 50px; }
+  /*---------------INDEX---------------*/
+  body .container_pag main .banner .des_banner {
+    padding-bottom: 100px; }
+  body .container_pag main .banner .img_banner {
+    height: 250px;
+    display: flex;
+    align-items: flex-end; }
+    body .container_pag main .banner .img_banner img {
+      height: 450px; }
+  body .container_pag main .sobre_mi .des_mi p {
+    padding: 35px; }
+  body .container_pag main .some_proyectos .group_card .card {
+    width: 300px; }
+    body .container_pag main .some_proyectos .group_card .card img {
+      width: 300px; }
+  /*---------------SKILLS---------------*/
+  body .container_pag .main_skills .skills .skills_descripcion .des {
+    padding: 35px; }
+  /*---------------CONTACTO---------------*/
+  body .container_pag .main_contacto .formulario {
+    width: 400px; }
+    body .container_pag .main_contacto .formulario form .field {
+      width: 350px;
+      border-radius: 40%;
+      margin: 0 0 50px 0; }
+    body .container_pag .main_contacto .formulario form .field_des {
+      width: 350px; } }
+
+@media all and (min-width: 600px) {
+  /*---------------INDEX---------------*/
+  body .container_pag main .sobre_mi {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 25px; }
+    body .container_pag main .sobre_mi .img {
+      display: flex;
+      justify-content: end;
+      padding-right: 10px; }
+      body .container_pag main .sobre_mi .img img {
+        width: 250px;
+        border-radius: 10%; }
+    body .container_pag main .sobre_mi .des_mi {
+      padding-top: 25px; }
+      body .container_pag main .sobre_mi .des_mi h2, body .container_pag main .sobre_mi .des_mi h3, body .container_pag main .sobre_mi .des_mi p {
+        text-align: left; }
+      body .container_pag main .sobre_mi .des_mi h2 {
+        margin-bottom: 30px; }
+      body .container_pag main .sobre_mi .des_mi p {
+        padding: 5px 35px 35px 0px;
+        text-align: justify;
+        font-size: 20px; }
+  /*---------------SKILLS---------------*/
+  body .container_pag .main_skills .skills .skills_descripcion .des {
+    font-size: 20px;
+    padding: 5px 35px 35px 0px; }
+  body .container_pag .main_skills .skills .descargar_cv .enlace {
+    font-size: 20px; }
+  body .container_pag .main_skills .contenedor_card_skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*---------------PORTAFOLIO---------------*/
+  body .container_pag .main_portafolio .con_portafolio .portafolio_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*---------------SERVICIOS---------------*/
+  body .container_pag .main_servicios .con_servicios .con_servicios_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*---------------CONTACTO---------------*/
+  body .container_pag .main_contacto .formulario {
+    width: 500px; }
+    body .container_pag .main_contacto .formulario form .field {
+      width: 350px;
+      border-radius: 20%;
+      margin: 0 0 50px 0; }
+    body .container_pag .main_contacto .formulario form .field_des {
+      width: 350px; } }
+
+@media all and (min-width: 768px) {
+  /*---------------INDEX---------------*/
+  body .container_pag main .banner .des_banner {
+    padding: 25px 0 100px 25px; }
+  body .container_pag main .banner .img_banner {
+    height: 350px;
+    display: flex;
+    align-items: flex-end; }
+    body .container_pag main .banner .img_banner img {
+      height: 600px; }
+  body .container_pag main .sobre_mi {
+    margin-top: 150px; }
+    body .container_pag main .sobre_mi .img {
+      display: flex;
+      justify-content: end;
+      padding-right: 10px; }
+      body .container_pag main .sobre_mi .img img {
+        width: 300px;
+        height: 430px;
+        border-radius: 10%; }
+    body .container_pag main .sobre_mi .des_mi {
+      padding-top: 25px; }
+      body .container_pag main .sobre_mi .des_mi h2, body .container_pag main .sobre_mi .des_mi h3, body .container_pag main .sobre_mi .des_mi p {
+        text-align: left; }
+      body .container_pag main .sobre_mi .des_mi h2 {
+        margin-bottom: 30px; }
+      body .container_pag main .sobre_mi .des_mi p {
+        padding: 5px 35px 35px 0px;
+        text-align: justify;
+        font-size: 20px; }
+  body .container_pag main .some_proyectos {
+    margin-top: 50px; }
+    body .container_pag main .some_proyectos .group_card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+  /*---------------SERVICIOS---------------*/
+  body .container_pag .main_servicios .con_servicios .ser_titulo {
+    margin-top: 30px; }
+  body .container_pag .main_servicios .con_servicios .con_servicios_card {
+    margin-top: 30px; }
+    body .container_pag .main_servicios .con_servicios .con_servicios_card .s_card {
+      width: 360px; }
+      body .container_pag .main_servicios .con_servicios .con_servicios_card .s_card img {
+        height: 300px;
+        width: 300px; }
+      body .container_pag .main_servicios .con_servicios .con_servicios_card .s_card .des_card_port {
+        font-size: 20px; }
+  /*---------------FOOTER---------------*/
+  footer .footer_des {
+    padding: 0 10% 0 10%; } }
+
+@media all and (min-width: 800px) {
+  /*---------------INDEX---------------*/
+  body .container_pag main .banner .des_banner {
+    padding: 30px 0 100px 30px; }
+    body .container_pag main .banner .des_banner p:nth-child(1) {
+      font-size: 25px; }
+    body .container_pag main .banner .des_banner p:nth-child(2) {
+      padding-left: 15px;
+      font-size: 50px; }
+    body .container_pag main .banner .des_banner p:nth-child(3) {
+      font-size: 30px; }
+  body .container_pag main .sobre_mi .des_mi {
+    padding-top: 10px; }
+    body .container_pag main .sobre_mi .des_mi h2 {
+      margin-bottom: 0; }
+    body .container_pag main .sobre_mi .des_mi p {
+      padding-right: 40%; }
+  /*---------------FOOTER---------------*/
+  footer .footer_des {
+    padding: 0 20% 0 20%; } }
 
 @media all and (min-width: 1024px) {
   /*---------------Navegacion---------------*/
-  body .container header .nav .nav-container {
+  body div header .nav .nav-container {
     display: grid;
     grid-template-columns: 30% 70%; }
-    body .container header .nav .nav-container .nav__logo {
-      margin-left: 80px; }
-    body .container header .nav .nav-container .nav__label {
+    body div header .nav .nav-container .nav__logo {
+      margin-left: 50px;
+      font-size: 60px; }
+    body div header .nav .nav-container .nav__label {
       display: none; }
-    body .container header .nav .nav-container .nav__menu {
+    body div header .nav .nav-container .nav__menu {
       margin-left: 45px;
       position: static;
       background: none;
       height: auto;
       clip-path: none;
       opacity: none; }
-      body .container header .nav .nav-container .nav__menu ul {
+      body div header .nav .nav-container .nav__menu ul {
         color: #ffff;
         display: grid;
         grid-auto-flow: column;
         font-size: 10px; }
-        body .container header .nav .nav-container .nav__menu ul li {
+        body div header .nav .nav-container .nav__menu ul li {
           margin-bottom: 0;
           margin-left: 30px; }
-          body .container header .nav .nav-container .nav__menu ul li .nav__item {
-            font-size: 20px; } }
+          body div header .nav .nav-container .nav__menu ul li .nav__item {
+            font-size: 25px; }
+  /*---------------INDEX---------------*/
+  body .container_pag main .banner .des_banner {
+    padding: 40px 0 100px 60px; }
+    body .container_pag main .banner .des_banner p:nth-child(1) {
+      font-size: 25px; }
+    body .container_pag main .banner .des_banner p:nth-child(2) {
+      padding-left: 30px;
+      font-size: 65px; }
+    body .container_pag main .banner .des_banner p:nth-child(3) {
+      font-size: 30px; }
+  body .container_pag main .banner .img_banner {
+    height: 650px;
+    display: flex;
+    align-items: flex-end; }
+    body .container_pag main .banner .img_banner img {
+      height: 1000px; }
+  body .container_pag main .sobre_mi {
+    margin-top: 380px; }
+    body .container_pag main .sobre_mi .des_mi {
+      padding-top: 10px; }
+      body .container_pag main .sobre_mi .des_mi h2 {
+        margin-bottom: 0; }
+      body .container_pag main .sobre_mi .des_mi p {
+        padding-right: 40%; }
+  /*---------------FOOTER---------------*/
+  footer {
+    grid-template-areas: "titulo_footer titulo_footer titulo_footer titulo_footer" "footer_des        fa-github      fa-instagram  fa-linkedin" "footer_des         fa-whatsapp    fa-telegram    fa-facebook-f";
+    grid-template-columns: 4fr 0.5fr 0.5fr 3fr; }
+    footer .footer_des {
+      padding: 0 0 0 55%;
+      text-align: justify; } }
+
+@media all and (min-width: 1280px) {
+  /*---------------Navegacion---------------*/
+  body div header .nav .nav-container .nav__logo {
+    font-size: 65px; }
+  body div header .nav .nav-container .nav__menu ul {
+    margin: 0 0 0;
+    align-items: center; }
+    body div header .nav .nav-container .nav__menu ul li .nav__item {
+      font-size: 30px; }
+  /*---------------INDEX---------------*/
+  body .container_pag main .sobre_mi .des_mi p {
+    padding-right: 60%; } }
+
+@media all and (min-width: 1440px) {
+  /*---------------INDEX---------------*/
+  body .container_pag main .banner .des_banner {
+    padding: 40px 0 200px 300px; }
+  body .container_pag main .banner .img_banner img {
+    height: 1150px; }
+  body .container_pag main .sobre_mi {
+    margin-top: 500px; }
+    body .container_pag main .sobre_mi .des_mi {
+      padding-top: 10px; }
+      body .container_pag main .sobre_mi .des_mi h2 {
+        font-size: 50px;
+        margin-bottom: 0; }
+      body .container_pag main .sobre_mi .des_mi p {
+        padding-right: 60%; }
+  body .container_pag main .some_proyectos {
+    display: inline-block; }
+    body .container_pag main .some_proyectos .titulo_proyectos h2 {
+      font-size: 50px; }
+  /*---------------SKILLS---------------*/
+  body .container_pag .main_skills .skills .skills_descripcion .titulo_skills {
+    font-size: 60px; }
+  body .container_pag .main_skills .skills .skills_descripcion .des {
+    font-size: 20px;
+    padding: 5px 30% 35px 30%; }
+  body .container_pag .main_skills .skills .descargar_cv .enlace {
+    font-size: 20px; }
+  body .container_pag .main_skills .contenedor_card_skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*---------------PORTAFOLIO---------------*/
+  body .container_pag .main_portafolio .con_portafolio .p_titulo h2 {
+    font-size: 60px; }
+  body .container_pag .main_portafolio .con_portafolio .portafolio_card .card {
+    margin: 30px; }
+  /*---------------SERVICIOS---------------*/
+  body .container_pag .main_servicios .con_servicios .ser_titulo h2 {
+    font-size: 60px; }
+  footer .titulo_footer {
+    margin-bottom: 15px; }
+  footer .footer_des {
+    padding: 0 0 0 65%;
+    text-align: justify; }
+    footer .footer_des p {
+      font-size: 20px; } }

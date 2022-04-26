@@ -9,7 +9,7 @@ body{
                 color: $color-blanco;
                 position:fixed;
                 border-bottom: 1px solid #293241;
-                z-index: 10; 
+                z-index: 999; 
                 .nav-container{
                     display: flex;
                     height:100%;

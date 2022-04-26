@@ -1,20 +1,53 @@
-@media all and (min-width:321px){
+@media all and (min-width:321px) {
     /*---------------INDEX---------------*/
     body{
-        main{
-            .sobre_mi{
-                .des_mi{
-                    p{
-                        padding: 20px;
+        .container_pag{
+            main{
+                .banner{
+                    .des_banner{
+                        padding-bottom: 45px;
+                    }
+                    .img_banner{
+                        height:250px;
+                        display: flex;
+                        align-items: flex-end;
+                        img{
+                            height:350px;
+                        }
+                    }
+                }
+                .sobre_mi{
+                    .des_mi{
+                        p{
+                            padding: 30px;
+                        }
+                    }
+                }
+                .some_proyectos{
+                    .group_card{
+                        .card{
+                            width:300px;
+                            img{
+                                width:300px;  
+                            }
+                        }
                     }
                 }
             }
-            .some_proyectos{
-                .group_card{
-                    .card{
-                        width:300px;
-                        img{
-                            width:300px;  
+            
+        }
+    }
+    /*---------------PORTAFOLIO---------------*/
+    body{
+        .container_pag{
+            .main_portafolio{
+                .con_portafolio{
+                    .portafolio_card{
+                        .card{
+                            width:300px;
+                            img{
+                                width:300px;  
+                            }
                         }
                     }
                 }
@@ -22,23 +55,352 @@
         }
     }
 }
-@media all and (min-width:481px){
-
+@media all and (min-width:480px) {
+    /*---------------Navegacion---------------*/
+    body{
+        div{
+            header{
+                .nav{
+                    .nav-container{
+                        .nav__logo{
+                            font-size:50px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    /*---------------INDEX---------------*/
+    body{
+        .container_pag{
+            main{
+                .banner{
+                    .des_banner{
+                        padding-bottom: 100px;
+                    }
+                    .img_banner{
+                        height:250px;
+                        display: flex;
+                        align-items: flex-end;
+                        img{
+                            height:450px;
+                        }
+                    }
+                }
+                .sobre_mi{
+                    .des_mi{
+                        p{
+                            padding: 35px;
+                        }
+                    }
+                }
+                .some_proyectos{
+                    .group_card{
+                        .card{
+                            width:300px;
+                            img{
+                                width:300px;  
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*---------------SKILLS---------------*/
+    body{
+        .container_pag{
+            .main_skills{
+                .skills{
+                    .skills_descripcion{
+                        .des{
+                            padding:35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*---------------CONTACTO---------------*/
+    body{
+        .container_pag{
+            .main_contacto{
+                .formulario{
+                    width:400px;
+                    form{
+                        .field{
+                            width: 350px;
+                            border-radius:40%;
+                            margin: 0 0 50px 0;
+                        }
+                        .field_des{
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-@media all and (min-width:601px){
-    
+@media all and (min-width:600px){
+    /*---------------INDEX---------------*/
+    body{
+        .container_pag{
+            main{
+                .sobre_mi{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    margin-bottom: 25px;
+                    .img{
+                        display: flex;
+                        justify-content: end;
+                        padding-right: 10px;
+                        img{
+                            width: 250px;
+                            border-radius: 10%;
+                        }
+                    }
+                    .des_mi{
+                        padding-top: 25px;
+                        h2,h3,p{
+                            text-align:left;
+                        }
+                        h2{
+                            margin-bottom:30px;
+                        }
+                        p{
+                            padding: 5px 35px 35px 0px;
+                            text-align: justify;
+                            font-size: 20px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    /*---------------SKILLS---------------*/
+    body{
+        .container_pag{
+            .main_skills{
+                .skills{
+                    .skills_descripcion{
+                        .des{
+                            font-size:20px;
+                            padding: 5px 35px 35px 0px;
+                        }
+                    }
+                    .descargar_cv{
+                        .enlace{
+                            font-size:20px;
+                        }
+                    }
+                }
+                .contenedor_card_skills{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    /*---------------PORTAFOLIO---------------*/
+    body{
+        .container_pag{
+            .main_portafolio{
+                .con_portafolio{
+                    .portafolio_card{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    /*---------------SERVICIOS---------------*/
+    body{
+        .container_pag{
+            .main_servicios{
+                .con_servicios{
+                    .con_servicios_card{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    /*---------------CONTACTO---------------*/
+    body{
+        .container_pag{
+            .main_contacto{
+                .formulario{
+                    width:500px;
+                    form{
+                        .field{
+                            width: 350px;
+                            border-radius:20%;
+                            margin: 0 0 50px 0;
+                        }
+                        .field_des{
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (min-width:768px){
+    /*---------------INDEX---------------*/
+    body{
+        .container_pag{
+            main{
+                .banner{
+                    .des_banner{
+                        padding:25px 0 100px 25px;
+                        
+                    }
+                    .img_banner{
+                        height:350px;
+                        display: flex;
+                        align-items: flex-end;
+                        img{
+                            height:600px;
+                        }
+                    }
+                }
+                .sobre_mi{
+                    margin-top: 150px;
+                    .img{
+                        display: flex;
+                        justify-content: end;
+                        padding-right: 10px;
+                        img{
+                            width: 300px;
+                            height: 430px;
+                            border-radius: 10%;
+                        }
+                    }
+                    .des_mi{
+                        padding-top: 25px;
+                        h2,h3,p{
+                            text-align:left;
+                        }
+                        h2{
+                            margin-bottom:30px;
+                        }
+                        p{
+                            padding: 5px 35px 35px 0px;
+                            text-align: justify;
+                            font-size: 20px;
+                        }
+                        
+                    }
+                }
+                .some_proyectos{
+                    margin-top: 50px;
+                    .group_card{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    /*---------------SERVICIOS---------------*/
+    body{
+        .container_pag{
+            .main_servicios{
+                .con_servicios{
+                    .ser_titulo{
+                        margin-top: 30px;
+                    }
+                    .con_servicios_card{
+                        margin-top: 30px;
+                        .s_card{
+                            width: 360px;
+                            img{
+                                height:300px;
+                                width:300px;
+                            }
+                            .des_card_port{
+                                font-size:20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*---------------FOOTER---------------*/
+    footer{
+        .footer_des{
+            padding:0 10% 0 10%;
+        }
+    }
+}
+@media all and (min-width:800px){
+    /*---------------INDEX---------------*/
+    body{
+        .container_pag{
+            main{
+                .banner{
+                    .des_banner{
+                        padding:30px 0 100px 30px;
+                        p:nth-child(1){
+                            font-size: 25px;
+                        }
+                        p:nth-child(2){
+                            padding-left: 15px;
+                            font-size: 50px;
+                        }
+                        p:nth-child(3){
+                            font-size:30px;
+                        }
+                    }
+                }
+                .sobre_mi{
+                    .des_mi{
+                        padding-top: 10px;
+                        h2{
+                            margin-bottom:0;
+                        }
+                        p{
+                            padding-right: 40%; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*---------------FOOTER---------------*/
+    footer{
+        .footer_des{
+            padding:0 20% 0 20%;
+        }
+    }
 }
 @media all and (min-width:1024px){
     /*---------------Navegacion---------------*/
     body{
-        .container{
+        div{
             header{
                 .nav{
                     .nav-container{
                         display: grid;
                         grid-template-columns: 30% 70%;
                         .nav__logo{
-                            margin-left: 80px;
+                            margin-left: 50px;
+                            font-size: 60px;
                         }
                         .nav__label{
                             display: none;
@@ -59,13 +421,224 @@
                                     margin-bottom: 0;
                                     margin-left: 30px;
                                     .nav__item{
-                                        font-size:20px;
+                                        font-size:25px;
                                     }
                                 }
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+    /*---------------INDEX---------------*/
+    body{
+        .container_pag{
+            main{
+                .banner{
+                    .des_banner{
+                        padding:40px 0 100px 60px;
+                        p:nth-child(1){
+                            font-size: 25px;
+                        }
+                        p:nth-child(2){
+                            padding-left: 30px;
+                            font-size: 65px;
+                        }
+                        p:nth-child(3){
+                            font-size:30px;
+                        }
+                    }
+                    .img_banner{
+                        height:650px;
+                        display: flex;
+                        align-items: flex-end;
+                        img{
+                            height: 1000px;
+                        }
+                    }
+                }
+                .sobre_mi{
+                    margin-top: 380px;
+                    .des_mi{
+                        padding-top: 10px;
+                        h2{
+                            margin-bottom:0;
+                        }
+                        p{
+                            padding-right: 40%; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*---------------FOOTER---------------*/
+    footer{
+        grid-template-areas: "titulo_footer titulo_footer titulo_footer titulo_footer"
+        "footer_des        fa-github      fa-instagram  fa-linkedin"
+        "footer_des         fa-whatsapp    fa-telegram    fa-facebook-f";
+        grid-template-columns: 4fr 0.5fr 0.5fr 3fr;                 
+        .footer_des{
+            padding:0 0 0 55%;
+            text-align: justify;
+        }
+    }
+}
+@media all and (min-width:1280px){
+    /*---------------Navegacion---------------*/
+    body{
+        div{
+            header{
+                .nav{
+                    .nav-container{
+                        .nav__logo{
+                            font-size: 65px;
+                        }
+                        .nav__menu{
+                            ul{
+                                margin: 0 0 0;
+                                align-items: center;
+                                li{
+                                    .nav__item{
+                                        font-size:30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*---------------INDEX---------------*/
+    body{
+        .container_pag{
+            main{
+                .sobre_mi{
+                    .des_mi{
+                        
+                        p{
+                            padding-right: 60%; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (min-width:1440px){
+    /*---------------INDEX---------------*/
+    body{
+        .container_pag{
+            main{
+                .banner{
+                    .des_banner{
+                        padding:40px 0 200px 300px;
+                        
+                    }
+                    .img_banner{
+                        img{
+                            height: 1150px;
+                        }
+                    }
+                }
+                .sobre_mi{
+                    margin-top: 500px;
+                    .des_mi{
+                        padding-top: 10px;
+                        h2{
+                            font-size:50px;
+                            margin-bottom:0;
+                        }
+                        p{
+                            padding-right: 60%; 
+                        }
+                    }
+                }
+                .some_proyectos{
+                    display: inline-block;
+                    .titulo_proyectos{
+                        h2{
+                            font-size:50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*---------------SKILLS---------------*/
+    body{
+        .container_pag{
+            .main_skills{
+                .skills{
+                    .skills_descripcion{
+                        .titulo_skills{
+                            font-size:60px;
+                        }
+                        .des{
+                            font-size:20px;
+                            padding: 5px 30% 35px 30%;
+                        }
+                    }
+                    .descargar_cv{
+                        .enlace{
+                            font-size:20px;
+                        }
+                    }
+                }
+                .contenedor_card_skills{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    /*---------------PORTAFOLIO---------------*/
+    body{
+        .container_pag{
+            .main_portafolio{
+                .con_portafolio{
+                    .p_titulo{
+                        h2{
+                            font-size:60px;
+                        }
+                    }
+                    .portafolio_card{
+                        .card{
+                            margin: 30px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*---------------SERVICIOS---------------*/
+    body{
+        .container_pag{
+            .main_servicios{
+                .con_servicios{
+                    .ser_titulo{
+                        h2{
+                            font-size:60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .titulo_footer{
+            margin-bottom:15px;
+        }
+        .footer_des{
+            padding:0 0 0 65%;
+            text-align: justify;
+            p{
+                font-size:20px;
             }
         }
     }

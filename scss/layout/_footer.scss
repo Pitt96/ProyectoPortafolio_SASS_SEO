@@ -9,6 +9,7 @@ footer{
                           "fa-github      fa-instagram  fa-linkedin"
                           "fa-whatsapp    fa-telegram    fa-facebook-f";
     justify-content: center;
+    grid-template-columns: 2fr 1fr 2fr;
     padding-bottom: 10px;
     .titulo_footer{
         font-family: $tipo-letra-titulos;
