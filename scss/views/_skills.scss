@@ -1,67 +1,57 @@
 body{
     .main_skills{
-        width: 100%;
+        width: $width_total;
         .skills{
-            width:100%;
+            width:$width_total;
             height:auto;
             text-align: center;
-            margin-top:20px;
-            margin-bottom:30px;
+            @include margin_arriba_abajo(20px,30px);
             display: block;
             align-items: center;
             .skills_descripcion{
                 .titulo_skills{
-                    font-family: $tipo-letra-titulos;
-                    color: $color-blanco;
-                    font-size:38px;
-                    margin-bottom:12px;
+                    @include titulo(38px);
+                    margin-bottom:$margin - 3;
                 }
                 .des{
                     color: #A4819D;
-                    margin-bottom: 10px;
+                    margin-bottom:$margin - 5;
                     padding:25px;
                 }
             }
             .descargar_cv{
-                display: inline-block;
-                margin: 10px;
-                padding: 10px;
-                border-radius:20px;
-                background-color: #E91A48;
+                @extend %boton;
                 .enlace{
                     text-decoration: none;
-                    color: $color-blanco;
+                    color:map-get($map: $paleta, $key: color-blanco) ;
                 }
                 &:hover{
-                    background-color:$color-negro;
+                    background-color:map-get($map: $paleta, $key: color-negro);
                     border:1px solid #E91A48;
                 }
             }
         }
         .contenedor_card_skills{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            width: $width_total;
+            @extend %flex;
             .skills_card{
                 // border:1px solid red;
-                background-color: #1A1A1A;
+                background-color: map-get($map: $paleta, $key: color-background);
                 width: 280px;
                 border-radius: 30px;
                 text-align: center;
-                margin: 10px;
+                margin:$margin - 5;
                 img{
-                    padding: 10px;
+                    padding: $padding - 70;
                     border-radius: 30px;
                     width: 250px;
                     height: 300px;
-                    margin-bottom: 10px;
+                    margin-bottom:$margin - 5;
                 }
                 .s_card_des{
-                    margin-top: 60px;
-                    margin-bottom:15px;
+                    @include margin_arriba_abajo(60px,15px);
                     p{
-                        color: $color-blanco;
+                        color:map-get($map: $paleta, $key: color-blanco) ;
                         font-size:30px;
                         font-family: $tipo-letra-contenido;
                         .s_span{

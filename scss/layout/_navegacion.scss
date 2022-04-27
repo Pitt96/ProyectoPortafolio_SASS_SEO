@@ -6,7 +6,7 @@ body{
                 background-color:black;
                 width: 100%;
                 height:80px;
-                color: $color-blanco;
+                color: map-get($map: $paleta, $key: color-blanco);
                 position:fixed;
                 border-bottom: 1px solid #293241;
                 z-index: 999; 
@@ -30,7 +30,7 @@ body{
                         cursor: pointer;
                         .fa-solid{
                             font-size:35px;
-                            color:$color-blanco;
+                            color:map-get($map: $paleta, $key: color-blanco);
                         }
                     }
                     .nav__input{
@@ -43,7 +43,7 @@ body{
                         position: fixed;
                         top: 80px;
                         bottom:0;
-                        background:$color-negro;
+                        background:map-get($map: $paleta, $key: color-negro);
                         width:100%;
                         left: 0;
                         display: flex;
@@ -62,13 +62,13 @@ body{
                                 list-style: none;
                                 .nav__item{
                                     text-decoration: none;
-                                    color: $color-blanco;
+                                    color:map-get($map: $paleta, $key: color-blanco);
                                     font-size:32px;
                                     --clippy:polygon(0 0,0 0,0 100%,0% 100%);
                                     &::after{
                                         content: "";
                                         display: block;
-                                        background-color:#FF1C52;
+                                        background-color:map-get($map: $paleta, $key: color-decorativo);
                                         width: 90%;
                                         margin-top: 3px;
                                         height:3px;

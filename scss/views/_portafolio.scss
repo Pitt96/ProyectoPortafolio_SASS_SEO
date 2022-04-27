@@ -1,57 +1,48 @@
 body{
     .container_pag{
         .main_portafolio{
-            padding-top:80px;
-            width: 100%;
+            padding-top:$padding;
+            width: $width_total;
             .con_portafolio{
-                padding-top: 10px;
+                padding-top: $padding - 70;
                 display:block;
-                width: 100%;
+                width: $width_total;
                 text-align: center;
                 .p_titulo{
-                    padding-bottom: 20px;
+                    padding-bottom: $padding - 60;
                     h2{
-                        font-family: $tipo-letra-titulos;
-                        font-size:38px;
-                        color:$color-blanco;
+                        @include titulo(38px);
                     }
                 }
                 .portafolio_card{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
-                    padding-bottom:30px;
+                    @extend %flex;
+                    width: $width_total;
+                    padding-bottom:$padding - 50;
                     .card{
                     
                         border-radius: 30px;
                         width:250px;
                         margin:10px;
-                        background-color: #1A1A1A;
+                        background-color: map-get($map: $paleta, $key: color-background);
                         img{
                             width: 250px;
                             border-radius: 30px;
-                            margin-bottom: 15px;
+                            margin-bottom: $margin;
                         }
                         .des_card{
-                            margin-bottom:10px;
-                            color: #A4819D;
+                            margin-bottom:$margin - 5;
+                            color: map-get($map: $paleta, $key: color-contenido);
                             font-family: $tipo-letra-contenido;
                         }
                         .ver{
                             text-decoration: none;
-                            display: inline-block;
-                            margin: 10px;
-                            padding: 10px;
-                            border-radius:20px;
-                            background-color: #E91A48;
+                            @extend %boton;
                             &:hover{
-                                border: 2px solid #E91A48;
-                                background-color:black;
+                                @include hover_boton;
                             }
                             a{
                                 text-decoration: none;
-                                color:$color-blanco;
+                                color:map-get($map: $paleta, $key: color-blanco) ;
                             }
                         }
                     }

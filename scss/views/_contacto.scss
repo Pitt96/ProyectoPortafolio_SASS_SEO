@@ -1,32 +1,25 @@
 body{
     .main_contacto{
-        padding-top:80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        padding-top:$padding;
+        @extend %flex;
+        width: $width_total;
         .formulario{
             width: 310px;
             display:block;
-            background-color:#1A1A1A;
-            padding-top:10px;
-            margin-top:20px;
-            margin-bottom:20px;
+            background-color:map-get($map: $paleta, $key: color-background);
+            padding-top:$padding - 70;
+            @include margin_arriba_abajo(20px,20px);
             border-radius:10%;
             // border: 1px solid #FF1C52;
             h2{
-                font-family: $tipo-letra-titulos;
-                font-size:38px;
-                color:$color-blanco;
+                @include titulo(38px);
                 text-align: center;
-                padding-bottom:10px;
+                padding-bottom:$padding - 70;
             }
             form{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                padding-bottom:30px;
+                @extend %flex;
+                width: $width_total;
+                padding-bottom:$padding - 50;
                 .field{
                     margin: 10px;
                     height: 50px;
@@ -37,18 +30,17 @@ body{
                     border-radius:10%;
                     text-align: center;
                     margin-bottom:30px;
-                    padding: 5px;
+                    padding: $padding - 75;
                 }
                 .btn{
                     width:200px;
                     border-radius: 10px;
-                    border: 1px solid #E91A48;
-                    color: #E91A48;
+                    border: 1px solid #FF1C52;
+                    color: map-get($map: $paleta, $key: color-decorativo);
                     font-weight: bold;
                     &:hover{
-                        background-color: #E91A48;
-                        color: $color-blanco;
-                        
+                        background-color: map-get($map: $paleta, $key: color-decorativo);
+                        color:map-get($map: $paleta, $key: color-blanco) ;
                     }
                 }
             }

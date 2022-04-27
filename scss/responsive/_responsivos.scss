@@ -413,7 +413,7 @@
                             clip-path:none;
                             opacity: none;
                             ul{
-                                color: $color-blanco;
+                                color: map-get($map: $paleta, $key: color-blanco);
                                 display: grid;
                                 grid-auto-flow: column;
                                 font-size: 10px;

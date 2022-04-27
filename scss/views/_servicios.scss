@@ -1,31 +1,26 @@
 body{
     .main_servicios{
         .con_servicios{
-            padding-top:5px;
+            padding-top:$padding - 75;
             display:block;
-            width: 100%;
+            width: $width_total;
             text-align: center;
             .ser_titulo{
                 h2{
-                    color:$color-blanco;
-                    font-family: $tipo-letra-titulos;
-                    font-size:38px;
+                    @include titulo(38px);
                 }
             }
             .con_servicios_card{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                padding-bottom:30px;
+                @extend %flex;
+                width: $width_total;
+                padding-bottom:$padding - 50;
                 .s_card{
                     width: 280px;
-                    background-color: #1A1A1A;
+                    background-color:map-get($map: $paleta, $key: color-background);
                     margin: 10px;
                     border-radius: 30px;
                     img{
-                        margin-top:5px;
-                        margin-bottom:5px;
+                        @include margin_arriba_abajo(5px,5px);
                         height:200px;
                         width:200px;
                         border-radius:50%;
@@ -33,25 +28,20 @@ body{
                     .ser_h3{
                         font-family: $tipo-letra-titulos;
                         font-size:25px;
-                        color:$color-blanco;
+                        color:map-get($map: $paleta, $key: color-blanco) ;
                     }
                     .des_card_port{
                         color: #A4819D;
                     }
                     .ver{
                         text-decoration: none;
-                        display: inline-block;
-                        margin: 10px;
-                        padding: 10px;
-                        border-radius:20px;
-                        background-color: #E91A48;
+                        @extend %boton;
                         &:hover{
-                            border: 2px solid #E91A48;
-                            background-color:black;
+                            @include hover_boton;
                         }
                         a{
                             text-decoration: none;
-                            color:$color-blanco;
+                            color:map-get($map: $paleta, $key: color-blanco) ;
                         }
                     }
                 }

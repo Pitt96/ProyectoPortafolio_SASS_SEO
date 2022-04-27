@@ -1,7 +1,7 @@
 footer{
     width:100%;
     background-color: #1A1A1A;
-    color: $color-blanco;
+    color: map-get($map: $paleta, $key: color-blanco);
     display: grid;
     text-align: center;
     grid-template-areas: "titulo_footer titulo_footer titulo_footer"
@@ -20,14 +20,14 @@ footer{
     }
     .footer_des{
         font-family: $tipo-letra-contenido;
-        color: #A4819D;
+        color: map-get($map: $paleta, $key: color-contenido);
         padding: 10px;
         margin-bottom:10px;
         font-size:15px;
         grid-area: footer_des;
     }
     .fa-brands{
-        color:$color-blanco;
+        color:map-get($map: $paleta, $key: color-blanco);
         font-size:25px;
         margin: 5px;
     }
