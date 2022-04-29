@@ -19,7 +19,7 @@ body{
                     font-size: 35px;
                     font-family: $tipo-letra-contenido;
                     span{
-                        color:map-get($map: $paleta, $key: color-contenido) ;
+                        color:map-get($map: $paleta, $key: color-decorativo) ;
                     }
                 }
                 p:nth-child(3){

@@ -109,7 +109,7 @@ body main {
         font-size: 35px;
         font-family: "Special Elite", cursive; }
         body main .banner .des_banner p:nth-child(2) span {
-          color: #A4819D; }
+          color: #FF1C52; }
       body main .banner .des_banner p:nth-child(3) {
         font-family: "Special Elite", cursive;
         font-size: 20px; }
@@ -366,10 +366,17 @@ footer {
     margin-bottom: 10px;
     font-size: 15px;
     grid-area: footer_des; }
-  footer .fa-brands {
+  footer a .fa-brands {
     color: #ffff;
     font-size: 25px;
-    margin: 5px; }
+    margin: 5px;
+    border: 2px solid #FF1C52;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: black; }
+    footer a .fa-brands:hover {
+      border-radius: none;
+      background-color: #FF1C52; }
   footer .iz_1 {
     grid-area: fa-github;
     justify-self: end; }

@@ -26,10 +26,21 @@ footer{
         font-size:15px;
         grid-area: footer_des;
     }
-    .fa-brands{
-        color:map-get($map: $paleta, $key: color-blanco);
-        font-size:25px;
-        margin: 5px;
+    a{
+        
+        .fa-brands{
+            color:map-get($map: $paleta, $key: color-blanco);
+            font-size:25px;
+            margin: 5px;
+            border: 2px solid #FF1C52;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: black;
+            &:hover{
+                border-radius: none;
+                background-color: #FF1C52;
+            }
+        }
     }
     .iz_1{
         grid-area: fa-github;
