@@ -302,6 +302,8 @@ body .main_servicios .con_servicios {
         body .main_servicios .con_servicios .con_servicios_card .s_card .ver a {
           text-decoration: none;
           color: #ffff; }
+  body .main_servicios .con_servicios .boos_slider {
+    display: none; }
 
 body .main_contacto {
   padding-top: 80px;
@@ -631,6 +633,53 @@ footer {
         margin-bottom: 0; }
       body .container_pag main .sobre_mi .des_mi p {
         padding-right: 40%; }
+  /*---------------SERVICIOS-------------*/
+  body .container_pag .main_servicios .con_servicios .ser_titulo {
+    display: none; }
+  body .container_pag .main_servicios .con_servicios .con_servicios_card {
+    display: none; }
+  body .container_pag .main_servicios .con_servicios article {
+    display: revert; }
+    body .container_pag .main_servicios .con_servicios article .carousel .carousel-item {
+      height: 90vh;
+      background: no-repeat scroll center scroll;
+      -webkit-backdrop-size: cover;
+      background-size: cover; }
+      body .container_pag .main_servicios .con_servicios article .carousel .carousel-item .d-block {
+        opacity: 0.2; }
+      body .container_pag .main_servicios .con_servicios article .carousel .carousel-item .carousel-caption {
+        bottom: 50px;
+        padding-left: 100px;
+        padding-right: 100px; }
+        body .container_pag .main_servicios .con_servicios article .carousel .carousel-item .carousel-caption h4 {
+          font-size: 50px;
+          font-family: 'Kaushan Script', cursive;
+          font-weight: 700; }
+        body .container_pag .main_servicios .con_servicios article .carousel .carousel-item .carousel-caption .slider-imagen {
+          height: 350px;
+          width: 350px;
+          border-radius: 50%; }
+        body .container_pag .main_servicios .con_servicios article .carousel .carousel-item .carousel-caption h5 {
+          font-family: 'Kaushan Script', cursive;
+          font-size: 38px;
+          font-weight: 700; }
+        body .container_pag .main_servicios .con_servicios article .carousel .carousel-item .carousel-caption p {
+          color: #A4819D;
+          font-weight: bold;
+          padding: 0 20% 0 20%;
+          font-size: 18px;
+          top: 2rem; }
+        body .container_pag .main_servicios .con_servicios article .carousel .carousel-item .carousel-caption .slider-btn .btn {
+          color: white;
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          border: 1px solid #FF1C52;
+          background-color: black;
+          font-weight: bold; }
+          body .container_pag .main_servicios .con_servicios article .carousel .carousel-item .carousel-caption .slider-btn .btn:hover {
+            background-color: #FF1C52;
+            color: black; }
   /*---------------FOOTER---------------*/
   footer {
     grid-template-areas: "titulo_footer titulo_footer titulo_footer titulo_footer" "footer_des        fa-github      fa-instagram  fa-linkedin" "footer_des         fa-whatsapp    fa-telegram    fa-facebook-f";
@@ -689,9 +738,7 @@ footer {
     font-size: 60px; }
   body .container_pag .main_portafolio .con_portafolio .portafolio_card .card {
     margin: 30px; }
-  /*---------------SERVICIOS---------------*/
-  body .container_pag .main_servicios .con_servicios .ser_titulo h2 {
-    font-size: 60px; }
+  /*---------------FOOTER---------------*/
   footer .titulo_footer {
     margin-bottom: 15px; }
   footer .footer_des {

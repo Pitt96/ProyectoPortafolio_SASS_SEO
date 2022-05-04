@@ -389,7 +389,7 @@
         }
     }
 }
-@media all and (min-width:1024px){
+@media all and(min-width:1024px){
     /*---------------Navegacion---------------*/
     body{
         div{
@@ -470,6 +470,81 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    /*---------------SERVICIOS-------------*/
+    body{
+        .container_pag{
+            .main_servicios{
+                .con_servicios{
+                    .ser_titulo{
+                        display:none;
+                    }
+                    .con_servicios_card{
+                        display: none;
+                    }
+                    article{
+                        display: revert;
+                        .carousel{
+                            .carousel-item{
+                                height:90vh;
+                                background:no-repeat scroll center scroll;
+                                -webkit-backdrop-size:cover ;
+                                background-size: cover;
+                                .d-block{
+                                    opacity: 0.2;
+                                }
+                                
+                                .carousel-caption{
+                                    bottom:50px;
+                                    padding-left: 100px;
+                                    padding-right: 100px;
+                                    h4{
+                                        font-size: 50px;
+                                        font-family:'Kaushan Script', cursive;
+                                        font-weight: 700;
+                                    }
+                                    .slider-imagen{
+                                        height:350px;
+                                        width:350px;
+                                        border-radius:50%;
+                                    }
+                                    h5{
+                                        font-family:'Kaushan Script', cursive;
+                                        font-size: 38px;
+                                        font-weight: 700;
+                                    }
+                                    p{
+                                        color: #A4819D;
+                                        font-weight: bold;
+                                        padding: 0 20% 0 20%;
+                                        font-size: 18px;
+                                        top:2rem;
+                                    }
+                                    .slider-btn{
+                                        .btn{
+                                            color: white;
+                                            margin: 10px;
+                                            padding: 10px;
+                                            border-radius:20px;
+                                            border: 1px solid #FF1C52;
+                                            background-color:black;
+                                            font-weight: bold;
+                                            &:hover{
+                                                background-color: #FF1C52;
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+        
+                    }
+
+                }
+
             }
         }
     }
@@ -616,20 +691,7 @@
             }
         }
     }
-    /*---------------SERVICIOS---------------*/
-    body{
-        .container_pag{
-            .main_servicios{
-                .con_servicios{
-                    .ser_titulo{
-                        h2{
-                            font-size:60px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+    /*---------------FOOTER---------------*/
     footer{
         .titulo_footer{
             margin-bottom:15px;
